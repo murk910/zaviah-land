@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<div style="position: fixed; inset: 0; background: rgba(0, 0, 0, 0.2); z-index: -1;"></div>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zaviah SmartClock</title>
   <style>
- body {
-  margin: 0;
-  font-family: sans-serif;
-  background: url('https://raw.githubusercontent.com/murk910/zaviah-land/refs/heads/main/ChatGPT%20Image%20Jul%2024%2C%202025%2C%2010_43_15%20PM.png') no-repeat center center fixed;
-  background-size: cover;
-  color: #333;
-}
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('https://raw.githubusercontent.com/murk910/zaviah-land/main/ChatGPT%20Image%20Jul%2024%2C%202025%2C%2010_43_15%20PM.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #1a1a1a;
+    }
+
+    header, .hero, .features, .cta, footer {
+      text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4);
+    }
+
     header {
       background: #111;
       color: #fff;
       padding: 2rem;
       text-align: center;
     }
+
     .hero {
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       text-align: center;
+      max-width: 800px;
+      margin: auto;
     }
+
     .hero h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
     }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #1a1a1a;
+    }
+
     .features {
       display: flex;
       flex-wrap: wrap;
@@ -34,43 +48,63 @@
       gap: 2rem;
       padding: 2rem 1rem;
     }
+
     .feature {
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       padding: 1.5rem;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
       max-width: 300px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: left;
     }
+
+    .feature:hover {
+      transform: translateY(-3px);
+      transition: 0.3s ease;
+    }
+
     .cta {
       text-align: center;
       padding: 2rem;
     }
-    .cta a {
+
+    .cta a,
+    button {
       display: inline-block;
       background: #007bff;
       color: white;
-      padding: 1rem 2rem;
+      padding: 0.8rem 1.8rem;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
     }
+
+    .cta a:hover,
+    button:hover {
+      background: #0056b3;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #888;
+      color: #444;
     }
   </style>
 </head>
-<body> 
-  margin: 0;
-    font-family: sans-serif;
-    background: #f8f9fa;
-    color: #333;
+<body>
+
+  <!-- Background overlay -->
+  <div style="position: fixed; inset: 0; background: rgba(255,255,255,0.4); z-index: -1;"></div>
+
   <header>
     <h1>Zaviah Office clock</h1>
     <p>Minimal. Connected. Made for your workspace.</p>
   </header>
-section class="hero">
+
+  <section class="hero">
     <h1>Time, Appointments, and Focus — All in One Display</h1>
     <p>A modern desk or wall-mounted smart display that shows your time, next calendar event, and more.</p>
   </section>
@@ -93,21 +127,19 @@ section class="hero">
       <p>Easy plug-and-play setup with WiFi configuration via browser.</p>
     </div>
   </section>
- <section class="cta">
-  <form action="https://formspree.io/f/myzpwyrd" method="POST" style="margin-top: 1rem;">
-    <input type="email" name="email" placeholder="Enter your email" required style="padding: 0.5rem; width: 250px; margin-bottom: 10px;" />
-    <br />
-    <button type="submit" style="padding: 0.5rem 1rem; background-color: #007bff; color: white; border: none; border-radius: 4px;">
-      Join Waitlist
-    </button>
-  </form>
-  <p style="margin-top: 1rem;">Coming soon to home offices, studios, and clinics.</p>
-</section>
+
+  <section class="cta">
+    <form action="https://formspree.io/f/myzpwyrd" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required style="padding: 0.5rem; width: 250px; margin-bottom: 10px;" />
+      <br />
+      <button type="submit">Join Waitlist</button>
+    </form>
     <p style="margin-top: 1rem;">Coming soon to home offices, studios, and clinics.</p>
   </section>
 
   <footer>
     &copy; 2025 Zaviah. All rights reserved.
   </footer>
+
 </body>
 </html>
