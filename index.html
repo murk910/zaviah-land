@@ -18,11 +18,11 @@
     }
 
     header {
-       background: rgba(0, 0, 0, 0.8); /* semi-transparent black */
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-  backdrop-filter: blur(4px); /* optional: softens background */
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      backdrop-filter: blur(4px);
     }
 
     .hero {
@@ -87,6 +87,21 @@
       background: #0056b3;
     }
 
+    .connect-btn {
+      display: inline-block;
+      background: #28a745;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .connect-btn:hover {
+      background-color: #218838;
+    }
+
     footer {
       text-align: center;
       padding: 2rem;
@@ -102,12 +117,12 @@
 
   <header>
     <h1>ZAVIAH Synergy Tech</h1>
-    <p>Smart appoitment system.</p>
+    <p>Smart appointment system.</p>
   </header>
 
   <section class="hero">
     <h1>Time, Appointments, and Focus — All in One Display</h1>
-    <p>A modern desk or wall-mounted smart display that shows your time, next appoitments, and more.</p>
+    <p>A modern desk or wall-mounted smart display that shows your time, next appointments, and more.</p>
   </section>
 
   <section class="features">
@@ -135,6 +150,10 @@
       <br />
       <button type="submit">Join Waitlist</button>
     </form>
+
+    <!-- Connect Google Calendar Button -->
+    <a href="https://zaviah-calendar-api.vercel.app/auth" class="connect-btn">Connect Google Calendar</a>
+
     <p style="margin-top: 1rem;">Coming soon to home offices, studios, and clinics.</p>
   </section>
 
